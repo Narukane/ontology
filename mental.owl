@@ -1,0 +1,968 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#"
+     xml:base="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#isSymptomsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#isSymptomsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#isSymptomsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Agitasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Agitasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Delusi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#AnxietyDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#AnxietyDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#AttentionDeficitHyperactivityDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#BipolarDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#ObessiveCompulsiveDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#AttentionDeficitHyperactivityDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#AttentionDeficitHyperactivityDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#BipolarDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#ObessiveCompulsiveDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#BipolarDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#BipolarDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#ObessiveCompulsiveDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Delusi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Delusi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MentalDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KehilanganMinat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KekawatiranBerlebih">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kelelahan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kemarahan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Keputusasaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kesedihan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KosentrasiKurang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KurangBisaMenahanDiri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Linglung">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MasalahDalamMemperhatikan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MentalDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MentalDisorder"/>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MudahMarah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#ObessiveCompulsiveDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#ObessiveCompulsiveDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KataYangBerulang"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerasaanAkanDatangMalapetaka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerilakuKompulsif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PerubahanSuasanaHati">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#PostTraumaticStressDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Agitasi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Agitasi"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kecemasan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Kegelisahan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Ketakutan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KewaspadaanTinggi"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Schizopernia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#DisorderType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Delusi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#hasSymptoms"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Delusi"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Halusinasi"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#IsolasiDiri"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#KesulitanFokus"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Pelupa"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#MentalDisorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#TindakanYangBerulang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karom/ontologies/2020/1/mental.owl#Symptoms"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
